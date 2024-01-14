@@ -1,7 +1,6 @@
 @import "null.scss";
 @import url("https://fonts.googleapis.com/css2?family=Poppins&family=Recursive&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-
 .wrapper {
   background: #232830;
   min-height: 100%;
@@ -161,34 +160,101 @@
   @extend %post;
 }
 
-// .post_2 {
-//   @extend %post;
-// }
+.selection {
+  padding: 8.25rem 0 9.81rem 0;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  .numbers {
+    color: #909090;
+    font-family: Recursive;
+    font-size: 1.5625rem;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+    .second {
+      color: #ff7575 !important;
+      font-family: Recursive;
+      font-size: 1.5625rem;
+      font-style: italic;
+      font-weight: 700;
+      line-height: normal;
+    }
+    span {
+      margin-left: 2.69rem;
+    }
+  }
+  .Previous {
+    color: #909090;
+    font-family: Recursive;
+    font-size: 1.5625rem;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .next {
+    margin-left: 2.69rem;
+    color: #909090;
+    font-family: Recursive;
+    font-size: 1.5625rem;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
 
-// .post_3 {
-//   @extend %post;
-// }
+.footer {
+  padding: 0 14rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 1.87rem;
+  margin-bottom: 7.94rem;
+  .bottom_title {
+    color: #fff;
+    font-family: Recursive;
+    font-size: 1.875rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+  .creator {
+    margin-left: 1rem;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-family: Recursive;
+    font-size: 1.1875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border-radius: 0.3125rem;
+    background: #4699e0;
+    span {
+      padding: 0.25rem 0.81rem 0.36rem 0.81rem;
+    }
+  }
+  .twitter {
+    align-items: center;
+    display: flex;
+    border-radius: 0.3125rem;
+    background: #4699e0;
+    color: #fff;
+    font-family: Recursive;
+    font-size: 1.1875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    span {
+      padding: 0.25rem 0.5rem 0.38rem 0.62rem;
+    }
+    img {
+      padding: 0.56rem 0 0.56rem 0.69rem;
+    }
+  }
+}
 
-// .post_4 {
-//   @extend %post;
-// }
-
-// .post_5 {
-//   @extend %post;
-// }
-
-// .post_6 {
-//   @extend %post;
-// }
-
-// .post_7 {
-//   @extend %post;
-// }
-
-// .post_8 {
-//   @extend %post;
-// }
-
-// .post_9 {
-//   @extend %post;
-// }
+.bottom_left {
+  display: flex;
+}
