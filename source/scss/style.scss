@@ -157,8 +157,14 @@
 .sheet {
   margin: 0rem auto;
   display: grid;
-  grid-template: 1fr 1fr / 1fr 1fr 1fr;
+  grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
   gap: 2.31rem;
+}
+
+@media screen and (max-width: 768px) {
+  .sheet {
+    grid-template: 1fr / 1fr;
+  }
 }
 
 *[class^="post_"] {
