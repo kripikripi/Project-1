@@ -89,6 +89,9 @@
     font-weight: 400;
     line-height: normal;
     margin-left: 2.25rem;
+    &:hover {
+      color: #4d4d4d;
+    }
   }
 }
 
@@ -98,6 +101,7 @@
   border-radius: 1.375rem;
   border: 1px solid #252930;
   background: #fff;
+  box-shadow: 7px 7px 5px rgb(0, 0, 0);
   img {
     margin: 1.63rem 1.65rem 2.06rem 1.65rem;
     width: 21.0675rem;
@@ -184,6 +188,9 @@
     }
     span {
       margin-left: 2.69rem;
+      &:hover {
+        color: #4d4d4d;
+      }
     }
   }
   .Previous {
