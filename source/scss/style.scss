@@ -260,6 +260,11 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    transition-duration: 300ms;
+    &:hover {
+      background: #1073ca;
+      box-shadow: 3px 3px 0px black;
+    }
     span {
       padding: 0.25rem 0.5rem 0.38rem 0.62rem;
     }
