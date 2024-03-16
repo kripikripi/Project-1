@@ -1,0 +1,361 @@
+@charset "UTF-8";
+/*Обнуление*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Recursive&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*--------------------*/
+.wrapper {
+  background: #232830;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  max-height: 10.19rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4.69rem;
+  font-family: Poppins;
+}
+.header .title {
+  font-size: 1.875rem;
+}
+.header span {
+  margin-left: 2.25rem;
+  color: white;
+  font-size: 1.5rem;
+}
+.header .header__menu {
+  margin-right: 0.5rem;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.name {
+  margin: 12.44rem 0 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.name .title {
+  margin-top: 2.5rem;
+  color: #ff7575;
+  font-family: Recursive;
+  font-size: 4.4375rem;
+  font-style: italic;
+  font-weight: 400;
+  line-height: normal;
+}
+.name .sub_title {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 1.8125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 1.06rem;
+}
+
+.line {
+  opacity: 0.2;
+  background: #4d4d4d;
+  height: 3px;
+  margin-top: 6.19rem;
+}
+
+.horizontal_menu {
+  padding: 1rem 0 6.75rem 0;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+}
+.horizontal_menu .images {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.horizontal_menu .images img {
+  margin-left: 0.81rem;
+}
+.horizontal_menu .options {
+  margin: 0 0 0 2.56rem;
+  display: flex;
+  flex-wrap: nowrap;
+}
+.horizontal_menu span {
+  color: #909090;
+  font-family: Recursive;
+  font-size: 1.6875rem;
+  font-style: italic;
+  font-weight: 400;
+  line-height: normal;
+  margin-left: 2.25rem;
+}
+.horizontal_menu span:hover {
+  color: #4d4d4d;
+}
+
+*[class^=post_] {
+  width: 24.375rem;
+  height: 27.4375rem;
+  border-radius: 1.375rem;
+  border: 1px solid #252930;
+  background: #fff;
+  box-shadow: 7px 7px 5px rgb(0, 0, 0);
+}
+*[class^=post_] img {
+  margin: 1.63rem 1.65rem 2.06rem 1.65rem;
+  width: 21.0675rem;
+  height: 10rem;
+  flex-shrink: 0;
+}
+*[class^=post_] .date_creator {
+  width: 16rem;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 1.65rem;
+}
+*[class^=post_] .text {
+  display: block;
+  margin: 0 1.65rem 1.5rem 1.65rem;
+  color: #0f1217;
+  font-family: Poppins;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+*[class^=post_] .title {
+  display: block;
+  margin: 0 1.65rem 0.81rem 1.65rem;
+  color: #0f1217;
+  font-family: Poppins;
+  font-size: 1.1875rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+*[class^=post_] .date {
+  display: block;
+  color: #0f1217;
+  font-family: Poppins;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+*[class^=post_] .creator {
+  display: block;
+  color: #0f1217;
+  font-family: Poppins;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.sheet {
+  margin: 0rem auto;
+  display: grid;
+  grid-template: 1fr 1fr 1fr/1fr 1fr 1fr;
+  gap: 2.31rem;
+}
+
+@media screen and (max-width: 768px) {
+  .sheet {
+    grid-template: 1fr/1fr;
+  }
+}
+.selection {
+  padding: 8.25rem 0 9.81rem 0;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.selection .numbers {
+  color: #909090;
+  font-family: Recursive;
+  font-size: 1.5625rem;
+  font-style: italic;
+  font-weight: 400;
+  line-height: normal;
+}
+.selection .numbers .second {
+  color: #ff7575 !important;
+  font-family: Recursive;
+  font-size: 1.5625rem;
+  font-style: italic;
+  font-weight: 700;
+  line-height: normal;
+}
+.selection .numbers span {
+  margin-left: 2.69rem;
+}
+.selection .numbers span:hover {
+  color: #4d4d4d;
+}
+.selection .Previous {
+  color: #909090;
+  font-family: Recursive;
+  font-size: 1.5625rem;
+  font-style: italic;
+  font-weight: 400;
+  line-height: normal;
+}
+.selection .next {
+  margin-left: 2.69rem;
+  color: #909090;
+  font-family: Recursive;
+  font-size: 1.5625rem;
+  font-style: italic;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.footer {
+  padding: 0 14rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 1.87rem;
+  margin-bottom: 7.94rem;
+}
+.footer .bottom_title {
+  color: #fff;
+  font-family: Recursive;
+  font-size: 1.875rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.footer .creator {
+  margin-left: 1rem;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-family: Recursive;
+  font-size: 1.1875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border-radius: 0.3125rem;
+  background: #4699e0;
+}
+.footer .creator span {
+  padding: 0.25rem 0.81rem 0.36rem 0.81rem;
+}
+.footer .twitter {
+  align-items: center;
+  display: flex;
+  border-radius: 0.3125rem;
+  background: #4699e0;
+  color: #fff;
+  font-family: Recursive;
+  font-size: 1.1875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  transition-duration: 300ms;
+}
+.footer .twitter:hover {
+  background: #1073ca;
+  box-shadow: 3px 3px 0px black;
+}
+.footer .twitter span {
+  padding: 0.25rem 0.5rem 0.38rem 0.62rem;
+}
+.footer .twitter img {
+  padding: 0.56rem 0 0.56rem 0.69rem;
+}
+
+.bottom_left {
+  display: flex;
+}/*# sourceMappingURL=style.css.map */
